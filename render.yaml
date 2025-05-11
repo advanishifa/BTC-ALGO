@@ -4,6 +4,5 @@ services:
     name: tradingview-webhook
     env: python
     plan: free
-    buildCommand: ""
-    startCommand: python main.py
-    autoDeploy: true
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn btc_trading_bot:app --bind 0.0.0.0:$PORT
