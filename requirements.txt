@@ -1,4 +1,2 @@
-Flask
-ccxt
-python-dotenv   
-
+Flask==2.0.1
+requests==2.28.1
