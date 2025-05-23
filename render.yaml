@@ -3,6 +3,6 @@ services:
     name: tradingview-webhook
     env: python
     plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: python btc_trading_bot.py
-
+    buildCommand: ""
+    startCommand: python main.py
+    autoDeploy: true
