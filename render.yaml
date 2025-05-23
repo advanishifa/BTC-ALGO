@@ -3,6 +3,7 @@ services:
     name: tradingview-webhook
     env: python
     plan: free
-    buildCommand: ""
+    branch: main
+    buildCommand: pip install -r requirements.txt
     startCommand: python main.py
     autoDeploy: true
